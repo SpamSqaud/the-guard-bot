@@ -38,7 +38,7 @@ const config = {
 	 * @type {!string}
 	 * Telegram Bot token obtained from https://t.me/BotFather.
 	 */
-	token: '',
+	token: process.env.BOT_TOKEN,
 
 
 	chats: {
@@ -134,7 +134,7 @@ const config = {
 	 * List of plugin names to be loaded.
 	 * See Readme in plugins directory for more details.
 	 */
-	plugins: [],
+	plugins: [plugins],
 
 	/**
 	 * @type {InlineKeyboard}
